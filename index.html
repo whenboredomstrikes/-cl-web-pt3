@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button {
+            border: none;
+            border-radius: 200px;
+            padding: 15px 30px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #fc807f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="buy-btn"></button>
+</body>
+
+<script>
+    const totalPrice = "420.69235632455"
+    const btn = document.getElementById("buy-btn")
+    btn.textContent = `Buy €${Number(totalPrice).toFixed(2)}`
+</script>
+
+</html>
